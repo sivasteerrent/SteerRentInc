@@ -1,0 +1,8 @@
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\bin\Debug\SteerRent.DAL.dll.config
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\bin\Debug\SteerRent.DAL.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\bin\Debug\SteerRent.DAL.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\bin\Debug\SteerRent.Model.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\bin\Debug\SteerRent.Model.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\obj\Debug\SteerRent.DAL.csprojResolveAssemblyReference.cache
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\obj\Debug\SteerRent.DAL.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.DAL\obj\Debug\SteerRent.DAL.pdb

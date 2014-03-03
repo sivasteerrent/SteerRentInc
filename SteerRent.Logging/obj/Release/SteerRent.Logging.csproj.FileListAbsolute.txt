@@ -1,0 +1,11 @@
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\SteerRent.Logging.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\SteerRent.Logging.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.Design.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.Configuration.Design.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\obj\Release\SteerRent.Logging.csprojResolveAssemblyReference.cache
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\obj\Release\SteerRent.Logging.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Logging\obj\Release\SteerRent.Logging.pdb

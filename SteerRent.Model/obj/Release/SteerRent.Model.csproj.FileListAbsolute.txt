@@ -1,0 +1,5 @@
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Model\bin\Release\SteerRent.Model.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Model\bin\Release\SteerRent.Model.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Model\obj\Release\SteerRent.Model.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Model\obj\Release\SteerRent.Model.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.Model\obj\Release\SteerRent.Model.csprojResolveAssemblyReference.cache

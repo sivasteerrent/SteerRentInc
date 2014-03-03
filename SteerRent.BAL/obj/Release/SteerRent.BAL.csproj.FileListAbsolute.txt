@@ -1,0 +1,9 @@
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\bin\Release\SteerRent.BAL.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\bin\Release\SteerRent.BAL.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\bin\Release\SteerRent.DAL.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\bin\Release\SteerRent.Model.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\bin\Release\SteerRent.DAL.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\bin\Release\SteerRent.Model.pdb
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\obj\Release\SteerRent.BAL.csprojResolveAssemblyReference.cache
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\obj\Release\SteerRent.BAL.dll
+D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.BAL\obj\Release\SteerRent.BAL.pdb
