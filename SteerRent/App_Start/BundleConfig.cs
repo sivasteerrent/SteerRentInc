@@ -9,7 +9,15 @@ namespace SteerRent
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/core/script.js",
+                        "~/Scripts/core/jquery.backstretch.min.js",
+                        "~/Scripts/core/slidetabs.mousewheel.easing.js",
+                        "~/Scripts/core/jquery.slidetabs.js",
+                        "~/Scripts/core/slidetabs.touch.js",
+                        "~/Scripts/core/jquery.magnific-popup.js",
+                        "~/Scripts/core/jquery-ui-1.10.3.custom.js")
+                        );
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
@@ -23,7 +31,12 @@ namespace SteerRent
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                        "~/Content/site.css",
+                        "~/Content/CSS/slidetabs.css",
+                        "~/Content/CSS/jquery-ui-1.10.3.custom.css",
+                        "~/Content/CSS/magnific-popup.css",
+                        "~/Content/CSS/default.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
@@ -37,7 +50,8 @@ namespace SteerRent
                         "~/Content/themes/base/jquery.ui.tabs.css",
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
-                        "~/Content/themes/base/jquery.ui.theme.css"));
+                        "~/Content/themes/base/jquery.ui.theme.css"
+                        ));
         }
     }
 }

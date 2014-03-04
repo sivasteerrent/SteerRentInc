@@ -1,50 +1,70 @@
-﻿@model SteerRent.Models.LoginModel
+﻿@model SteerRent.Model.AccountModel.LogOnModel
 
 @{
-    ViewBag.Title = "Log in";
+    Layout = null;
 }
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-</hgroup>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" media="all" href="~/Content/CSS/style.css" />
+    <title>Login</title>
+        <script lang="ja" type="text/javascript">
+                function loginValidate() {
+                    if (document.getElementById('txtPassword').value == '' || document.getElementById('txtPassword').value == '') {
+                        document.getElementById('.error_msg_sm').css("display", "block");
+                        return false;
+                    }
+                }
+</script>
+</head>
+<body>
 
-<section id="loginForm">
-<h2>Use a local account to log in.</h2>
-@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true)
+    <div id="login_mn">
+            <div id="login_main-cntr">
+                <h1>Login to SteerRent</h1>
+                <div class="lgn-innr">
+                    <br />
+                    <div class="error_message">
+                        <ul>
+                            <li id="errLogInMsg">@Html.ValidationMessage("LoginInvalid")
+                                @*<p class="error_msg_sm" style="display:none">Please enter Username/Password to proceed.</p>*@
+                            </li>
+                        </ul>
+                    </div>
 
-    <fieldset>
-        <legend>Log in Form</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-                @Html.ValidationMessageFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-                @Html.ValidationMessageFor(m => m.Password)
-            </li>
-            <li>
-                @Html.CheckBoxFor(m => m.RememberMe)
-                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
-            </li>
-        </ol>
-        <input type="submit" value="Log in" />
-    </fieldset>
-    <p>
-        @Html.ActionLink("Register", "Register") if you don't have an account.
-    </p>
-}
-</section>
+                    <div class="lgn-frm">
+                        <p>
+                            <input placeholder="Username" id="txtUserName" value="@Model.UserName" name="txtUserName" type="text" runat="server" />    
+                        </p>
+                        <p>
+                            <input id="txtPassword" placeholder="Password" name="txtPassword" @Model.Password runat="server" type="password" /></p>
 
-<section class="social" id="socialLoginForm">
-    <h2>Use another service to log in.</h2>
-    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
-</section>
+                        <div class="frgt">
+                            <span class="left padd5">
+                                <input  id="chkRememberMe" type="checkbox" name="chkRememberMe" value="@Model.RememberMe" /><label>Remember me</label></span>
+                            <a class="right padd10" href="@Url.Action("ForgotPassword","Account")" target="_parent">Forgot Password?</a>
+                           
+                        </div>
+                        <div class="clear"></div>
+                        <p class="button">
+                            <input class="btn_login" name="btnLogin" onclick="loginValidate()" ID="btnLogin" type="submit" value="Login" /></p>
+                    </div>  
+                </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+            </div>
+
+            <div class="copyright">&copy;&nbsp;2014&nbsp;SteerRent.&nbsp;All rights reserved.</div>
+        </div>
+    }
+            @*<script type="text/javascript" src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="~/Scripts/script.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery-migrate-1.1.1.js"></script>*@
+</body>
+</html>

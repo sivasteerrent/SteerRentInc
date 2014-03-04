@@ -1,48 +1,153 @@
-﻿<!DOCTYPE html>
+﻿@using SteerRent.Utilities;
+
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>@ViewBag.Title</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+        
+@*            <link rel="stylesheet"  media="all" type="text/css" href="~/Content/CSS/slidetabs.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="~/Content/CSS/jquery-ui-1.10.3.custom.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="~/Content/CSS/magnific-popup.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="~/Content/CSS/default.css" />*@
+
     </head>
     <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
+        <!-- Start layout
+==================================================-->
+<div class="layout">
+	<div class="part_inner">
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
+        <!-- Start Header Part
+		==================================================-->
+        <div class="header_space">
+    		<a class="logo_part" href="#"></a>
+            <div class="header_dropdown">
+                <a class="user_name">@SessionManager.DisplayName @SessionManager.DisplayName<span>&nbsp;</span></a>
+                <div class="user_part">
+                	<div class="user_part_inner">
+                       @Html.ActionLink("Update Profile", "Employee_A007", "Master",null, new {@class="user_item" })
+                        @*@Html.ActionLink("Change Password", "ChangePassword", "Account",null,new {@class="user_item",target = "_blank" })*@
+                        <a target="_blank" href="~/Views/Account/ChangePassword" class="user_item">Change Password</a>
+                        @Html.ActionLink("Logout", "LogOut", "Account",null, new {@class="user_item", onclick="disposeStorage()"  })
+                    </div>
+                </div>
+            </div>
+            <div class="header_right_part">
+             @*   <div class="serch_box_outter">
+                    <form method="post" name="serch-box">
+                        <div class="serch_box_inner"><input name="" class="serch_input" placeholder="Enter Keyword To search.." type="text" /></div>
+                        <button type="button" class="serch_btn"></button>
+                        <div class="clear"></div>
+                  </form>
+                </div>  *@
+            	<!--Start Menu--> 
+                <div class="menu_part">
+                    <a class="menu_item" id="menu_item">Menu</a>
+                    <div class="menu_space">
+                        <div class="menu_space_inner">
+                            <!-- <h4 class="menu_box_title">Menu</h4> --> 
+                            <div class="menu_outter_scrl">
+                            	<h5 class="menu_box_subtitle">Administration</h5> 
+                                <div class="sub_module_row">
+                                    <!--Start Menu Colume--> 
+                                    <div class="submodule_colume">
+                                        <h5 class="menu_box_submodule">Masters</h5>
+                                        <ul class="page_ul">    
+                                            <li><a class="page_name" data-url="@Url.Action("GeneralLookups_A001","Master")">General Lookups</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("HierarchicalLookup_A002","Master")">Hierarchical Lookups</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("CompanySetup_A003","Master")">Company Setup</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("Location_A004","Master")">Location</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("ChargeCodes_A005","Master")">Charge Codes</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("Employee_A007","Master")">Employee</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("Roles_A008","Master")">Roles</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("Privileges_A009","Master")">Privileges</a></li>
+                                            <li><a class="page_name" data-url="@Url.Action("Users_A010","Master")">Users</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--End Menu Colume-->
+                                    
+                                    <!--Start Menu Colume-->
+                                  <div class="submodule_colume">
+                                        <h5 class="menu_box_submodule">Report</h5>
+                                        <ul class="page_ul">
+                                            <li><a class="page_name" data-url="@Url.Action("UsersReport","Reports")">User Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--End Menu Colume-->
+                                    
+                                   @*   <!--Start Menu Colume-->
+                                    <div class="submodule_colume">
+                                        <h5 class="menu_box_submodule">Sub Module Name</h5>
+                                        <ul class="page_ul">
+                                            <li><a class="page_name" data-url="content.html">Page Name</a></li>
+                                            <li><a class="page_name" data-url="content.html">Page Name</a></li>
+                                            <li><a class="page_name" data-url="content.html">Page Name</a></li>
+                                            <li><a class="page_name" data-url="content.html">Page Name</a></li>
+                                        </ul>
+                                    </div>*@
+                                    <!--End Menu Colume-->
+                                    <div class="clear"></div>                                                                                    
+                                 </div>
+                                  <h5 class="menu_box_subtitle">Fleet Management</h5> 
+                                <div class="sub_module_row">
+                                    <!--Start Menu Colume--> 
+                                    <div class="submodule_colume">
+                                        <h5 class="menu_box_submodule">Vehicle</h5>
+                                        <ul class="page_ul">    
+                                            <li><a class="page_name" data-url="@Url.Action("VehicleMaster","Fleet")">Vehicle Master</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--End Menu Colume-->
+                                    </div>
+                            </div>
+                            <div class="clear"></div>   
+                        </div>
+                    </div>
+                </div>
+            	<!--End Menu-->
+                <div class="clear"></div>      
+			</div>
+        	<div class="clear"></div>
+        </div>
+        <!-- End Header part
+		==================================================-->
+        <div>
+           @* @RenderSection("featured", required: false)*@
+               @RenderBody()
+        </div>
+         <!-- Start Footer Part
+    	==================================================-->
+        <div class="footer_part">
+            <p class="copyright_part">&copy;2014 SteerRent</p>
+            <div class="footer_menu_part">
+                <a class="footer_item" href="javascript:;">Report Bug</a>
+                <div class="diwider">|</div>
+                <a class="footer_item" href="javascript:;">Help</a>
+                <div class="clear"></div>                                                              
+            </div>
+            <div class="clear"></div>
+        </div>    
+        <!-- End Footer Part
+        ==================================================-->
+        </div></div>
+    <script type="text/javascript" src="~/Scripts/core/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="~/Scripts/core/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="~/Scripts/core/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="~/Scripts/core/jquery-migrate-1.1.1.js"></script>
+<script type="text/javascript" src="~/Scripts/core/script.js"></script>
+<script type="text/javascript" lang="ja" src="~/Scripts/core/jquery.backstretch.min.js"></script>    
+<script type="text/javascript" src="~/Scripts/core/slidetabs.mousewheel.easing.js"></script> 
+<script type="text/javascript" src="~/Scripts/core/jquery.slidetabs.js"></script>
+<script type="text/javascript" src="~/Scripts/core/slidetabs.touch.js"></script>     
+<script type="text/javascript" src="~/Scripts/core/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="~/Scripts/core/jquery-ui-1.10.3.custom.js"></script>     
+
+        @*@Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)*@
     </body>
 </html>

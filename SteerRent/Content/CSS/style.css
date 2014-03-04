@@ -1,0 +1,158 @@
+
+body {
+margin:0px auto;
+padding:0px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+
+#login_mn {
+   position: absolute;
+	top: -20px;
+	left: 0;
+	bottom:0;
+	right:0;	
+	width: 450px;
+	height: 330px;
+	margin:auto;
+}
+
+#login_main-cntr {
+    width:450px;
+	margin:0 auto;
+}
+
+#login_main-cntr h1 {
+font-size:12px;
+font-weight:bold;
+text-transform:initial;
+text-decoration:none;
+color:#333333;
+background-color:#cccccc; 
+height:35px;
+line-height:35px;
+margin:0px;
+padding:1px 0 0 15px;
+}
+
+.lgn-innr{
+border:solid 1px #cccccc;
+overflow:hidden;
+padding:0 0 20px 0;
+height:240px;
+}
+
+.lgn-innr form {
+width:379px;
+margin:0 auto;
+}
+.lgn-frm {
+width:200px;
+margin:0 auto;
+height:183px;
+}
+
+.lgn-frm p {
+margin:0px;
+padding:20px 0 0 0;
+}
+
+.lgn-frm p:first-child {padding:10px 0 0 0;} 
+
+.lgn-innr input[type="text"], .lgn-innr input[type="password"] {
+	border:solid 1px #d4d4d4;
+	width:200px;
+	height:22px;
+	line-height:22px;
+	padding:0 0 0 2px;
+	font-size:11px;
+	color:#000;
+}
+
+.lgn-innr fieldset input[type="submit"]:hover {
+	background-color:#28ad63;
+}
+
+.lgn-innr input[type="checkbox"] {
+padding:2px 0 0 0;
+margin:0 5px 0 0;
+}
+
+.left{float:left;}
+.right{float:right;}
+
+.padd5 {padding-top:5px;}
+.padd10 {padding-top:10px;}
+
+.frgt {margin-top:10px;font-size:10px;}
+.frgt-passmrg {margin-top:95px;}
+
+.btn_login {
+background-color:#3399cc;
+font-size:11px;
+font-weight:normal;
+border:none;
+width:200px;
+height: 27px;
+text-align:center;
+padding:6px 0 8px 0;
+}
+
+.btn_submit{
+background-color:#3399cc;
+font-size:11px;
+font-weight:normal;
+border:none;
+width:110px;
+height: 27px;
+text-align:center;
+padding:6px 34px;
+}
+
+.btn_cancel{
+background-color:#cccccc;
+font-size:11px;
+font-weight:normal;
+border:none;
+width:70px;
+height: 27px;
+text-align:center;
+padding:6px 18px;
+}
+
+.logo {padding:0 0 6px 0;}
+
+.clear {clear:both;}
+
+.button {margin-top:97px;}
+
+.copyright {text-align:center;color:#999999; margin-top:8px;font-size:11px;}
+
+/* error message starts here */
+.error_message {
+	margin:0 auto;
+	width:420px;
+	text-align:center;
+}
+
+.error_message ul {
+	margin:5px 0 0 0;
+	padding:0;
+	list-style-type:none;
+}
+
+.error_message ul li {
+	margin:0;
+	padding:0 0 5px 0;
+	list-style-type:none;
+	font-size:11px;
+	color:red;
+	font-weight:normal;
+	}
+
+p.confirm {
+	font-size:11px;
+	color:green;
+	font-weight:normal;
+	text-align:center;
+}

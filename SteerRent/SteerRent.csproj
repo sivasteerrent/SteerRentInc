@@ -176,21 +176,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\SessionManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\CSS\default.css" />
+    <Content Include="Content\CSS\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\CSS\magnific-popup.css" />
+    <Content Include="Content\CSS\slidetabs.css" />
+    <Content Include="Content\CSS\style.css" />
+    <Content Include="Content\CSS\stylish-select.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -248,6 +251,34 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\arrows_h.gif" />
+    <Content Include="Images\arrows_v.gif" />
+    <Content Include="Images\body_bg1.jpg" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\cancel_btn.png" />
+    <Content Include="Images\car_icon.png" />
+    <Content Include="Images\comp_logo.png" />
+    <Content Include="Images\down_arrow.png" />
+    <Content Include="Images\down_arrow_user.png" />
+    <Content Include="Images\error_icon.png" />
+    <Content Include="Images\logo - Copy.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\popup-close.png" />
+    <Content Include="Images\search_icon.png" />
+    <Content Include="Images\spinner.gif" />
+    <Content Include="Images\success_icon.png" />
+    <Content Include="Images\tab.png" />
+    <Content Include="Scripts\core\jquery-1.9.1.js" />
+    <Content Include="Scripts\core\jquery-migrate-1.1.1.js" />
+    <Content Include="Scripts\core\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Scripts\core\jquery.backstretch.min.js" />
+    <Content Include="Scripts\core\jquery.magnific-popup.js" />
+    <Content Include="Scripts\core\jquery.slidetabs.js" />
+    <Content Include="Scripts\core\jquery.stylish-select.js" />
+    <Content Include="Scripts\core\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\core\script.js" />
+    <Content Include="Scripts\core\slidetabs.mousewheel.easing.js" />
+    <Content Include="Scripts\core\slidetabs.touch.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -285,28 +316,35 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Manage.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Home\Dashboard.cshtml" />
+    <Content Include="Views\Shared\_EmptyLayout.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SteerRent.BAL\SteerRent.BAL.csproj">
+      <Project>{d52c16cd-4e1c-4cad-9771-fe30540a8ed2}</Project>
+      <Name>SteerRent.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SteerRent.Model\SteerRent.Model.csproj">
+      <Project>{418aa8bf-4fe7-4f63-96a6-6b4c802f80ae}</Project>
+      <Name>SteerRent.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

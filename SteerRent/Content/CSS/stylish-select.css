@@ -1,0 +1,180 @@
+/**
+* Stylish Select 0.4.9 - $ plugin to replace a select drop down box with a stylable unordered list
+* http://github.com/scottdarby/Stylish-Select/
+* 
+* Copyright (c) 2009 Scott Darby
+* 
+* Requires: jQuery 1.3 or newer
+* 
+* Dual licensed under the MIT and GPL licenses.
+*/
+
+/**
+* Hide lists on page load
+---------------------------------------------------------*/
+
+.stylish-select .SSContainerDivWrapper {
+	left:-9999px;
+}
+
+/*
+* Red example
+---------------------------------------------------------*/
+.stylish-select .SSContainerDivWrapper {
+	margin:0;
+	padding:0;
+	width:290px;
+	position:absolute;
+	top:22px;
+	left:0;
+	z-index:2;
+}
+
+.stylish-select ul.newList {
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#000;
+	background:#fff;
+	border:1px solid #ccc;
+	overflow:auto;
+}
+
+.stylish-select ul.newList * {
+	margin:0;
+	padding:0;
+}
+
+
+.stylish-select ul.newList a {
+	color: #000;
+	text-decoration:none;
+	display:block;
+	padding:3px 8px;
+}
+
+.stylish-select .newListSelected {
+	width:285px;
+	color:#000;
+	height:19px;
+	padding:3px 0 0 6px;
+	float:left;
+	background:url(select-bg.png) no-repeat;
+}
+
+.stylish-select ul.newList li a:focus {
+	-moz-outline-style: none;
+}
+
+.stylish-select .selectedTxt {
+	width:258px;
+	overflow:hidden;
+	height:16px;
+	padding:0 23px 0 0;
+}
+
+.stylish-select .hiLite {
+	background:#650101!important;
+	color:#fff!important;
+}
+
+.stylish-select .newListHover {
+	background:#ccc!important;
+	color:#000!important;
+	cursor:default;
+}
+
+.stylish-select .newListDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListItemDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListOptionDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListSelHover,
+.stylish-select .newListSelFocus {
+	background-position:0 -22px;
+	cursor:default;
+}
+
+.stylish-select .newListOptionTitle {
+	font-weight:bold;
+}
+
+.stylish-select .newListOptionTitle ul {
+	margin:3px 0 0;
+}
+
+.stylish-select .newListOptionTitle li {
+	font-weight:normal;
+}
+
+
+
+     /*======================================*/
+/*============start default css changes=============*/
+     /*======================================*/
+.stylish-select .newListSelected {
+	width:100%;
+	color:#555;
+	height:auto;
+	padding:0px;
+	float:none;
+	background:none;
+}
+.stylish-select .hiLite {
+	background:#00a9f5!important;
+	color:#fff!important;
+}
+.stylish-select .newListHover {
+	background:#00a9f5!important;
+	color:#fff!important;
+	cursor:default;
+}
+
+     /*======================================*/
+/*============end default css changes=============*/
+     /*======================================*/
+	 
+
+
+
+/*==========start year combo===========*/
+.header_dropdown {
+	width:164px;
+	padding:0px;
+	height:30px;
+	background:url(/images/combo_month.png) no-repeat 0 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.header_dropdown .selectedTxt {
+	width:157px;
+	overflow:hidden;
+	height:30px;
+	padding:0 0px 0 7px;
+	line-height:30px;
+	outline:none;
+}
+.header_dropdown .SSContainerDivWrapper {
+	margin:0;
+	padding:0;
+	width:164px !important;
+	position:absolute;
+	top:35px;
+	left:0;
+}
+/*==========end year combo ===========*/
+

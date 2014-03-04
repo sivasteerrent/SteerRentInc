@@ -2,4 +2,3 @@ D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.ExceptionManag
 D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.ExceptionManagement\bin\Debug\SteerRent.ExceptionManagement.pdb
 D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.ExceptionManagement\obj\Debug\SteerRent.ExceptionManagement.dll
 D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.ExceptionManagement\obj\Debug\SteerRent.ExceptionManagement.pdb
-D:\source\apps\steerrent\Application\CodeBase\SteerRent\SteerRent.ExceptionManagement\obj\Debug\SteerRent.ExceptionManagement.csprojResolveAssemblyReference.cache

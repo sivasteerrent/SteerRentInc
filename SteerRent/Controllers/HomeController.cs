@@ -7,7 +7,14 @@ using System.Web.Mvc;
 namespace SteerRent.Controllers
 {
     public class HomeController : Controller
-    {
+    { //
+        // GET: /Dashboard/
+
+        public ActionResult Dashboard()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
