@@ -1,4 +1,4 @@
-/* 
+/*
 	Template Name: Clean Rounded
 	Template URI: www.slidetabs.com
 	Description: Clean style tabs
@@ -258,9 +258,8 @@ div.clean_rounded-horizontal.align_bottom.st_sliding_active > div.st_views {
  *
 ------------------------------------------------------------------------------------- */
 div.clean_rounded-vertical { /* The main container */
-	position:absolute;
+	position:relative;
 	clear:both;
-    height:100%;
 	width:100%; /* Set the full width */
 }
 
@@ -527,14 +526,14 @@ div.clean_rounded-vertical.align_right.st_sliding_active > div.st_views { /* Mai
 	left:auto;
 	background-position:center 10px;
 	border-top-left-radius:0px;
-	right:44px;
+	right:43px;
 }
 #demo_container div.clean_rounded-horizontal > div.st_tabs a.st_prev:hover { /* Previous button hover */	
 	background-position:center -50px;
 	background-color:#f8f8f8;
 }
 #demo_container div.clean_rounded-horizontal > div.st_tabs a.st_next { /* Next button */
-	right:0px;
+	right:1px;
 	background-position:center -20px;
 	border-top-right-radius:0px;
 }
@@ -597,7 +596,7 @@ div.clean_rounded-vertical.align_right.st_sliding_active > div.st_views { /* Mai
 	height:33px;
 	margin:0px;
 	padding:0 28px;
-	font:bold 12px/33px Arial, Helvetica, sans-serif;	
+	font:bold 12px/33px Arial, Helvetica, sans-serif;
 	color:#6a6a6a;
 	text-decoration:none;
 	outline:none;
@@ -630,6 +629,7 @@ div.clean_rounded-vertical.align_right.st_sliding_active > div.st_views { /* Mai
 	background:#fff;
 	color:#1ca5ec;
 }
+
 
 /* Content (horizontal)
 ------------------------------------------------------------------------------------- */

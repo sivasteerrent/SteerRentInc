@@ -331,71 +331,44 @@ body {
 }
 .error_msg_bg{
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size:11px;
 	font-weight:bold;
 	color:#F00;
-	display:none;
+	display:block;
 	margin-bottom:8px;
 	background:url(/images/error_icon.png) no-repeat 0 0;
 }
+.error_msg_sm{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#F00;
+	display:block;
+	margin-bottom:2px;
+	margin-left:27px;
+}
 .error_popup_bg{
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size:11px;
 	color:#F00;
 	display:block;
 	margin-bottom:8px;
 }
 .success_msg_bg{
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;	
-	color:#090;
+	font-size:11px;	
+	font-weight:bold;
+	color:#0A0;
 	display:block;
-	margin-bottom:8px;
-    display:none;
+	margin-bottom:1px;
+	background:url(/images/success_icon.png) no-repeat 0 0;
 }
-
-.error_msg{
+.success_msg_sm{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
-	color:#F00;
+	color:#0A0;
 	display:block;
 	margin-bottom:8px;
 }
-
-.error_msg_sm{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-	color:#F00;
-	display:block;
-	margin-bottom:8px;
-    display:none;
-}
-
-.error_msg_exist{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-	color:#F00;
-	display:block;
-	margin-bottom:8px;
-    display:none;
-}
-.error_msg_spclchar{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-	color:#F00;
-	display:block;
-	margin-bottom:8px;
-    display:none;
-}
-.error_msg_error{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-	color:#F00;
-	display:block;
-	margin-bottom:8px;
-    display:none;
-}
-
 .contain_title{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
@@ -408,8 +381,13 @@ body {
 	width:445px;
 	float:left;
 }
+.extra_wide{
+	width:920px;
+	float:left;
+}
 .label_part{
 	width:140px;
+	height:20px;
 	float:left;
 	margin-right:10px;
 	font-family:Arial, Helvetica, sans-serif;
@@ -417,7 +395,8 @@ body {
 	color:#000;
 	display:block;
 	line-height:100%;
-	margin-top:8px;
+	margin-top:4px;
+	vertical-align: middle;
 }
 .label_part span{
 	color:#F00;
@@ -426,57 +405,105 @@ body {
 	margin-top:0px;
 }
 .label_combo_part{
-	width:220px;
+	width:186px;
 	float:left;
 	display:block;
 }
 .label_combo_part select{
-	padding:5px;
-	width:100%;	
+	padding:1px;
+	width:100%;
+	height:100%;
 	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	display:block;
+	outline:none;
+	border:1px solid #ccc;
+	margin-bottom:2px;
+	vertical-align: middle;
+}
+.special_combo_for_table{
+	padding:2px;
+	width:160px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
 	display:block;	
 	border-color:#ccc;
 	outline:none;
+	border:1px solid #ccc;
+	margin-top:0px;
+}
+.special_input_for_rate_table{
+	width:40px;
+	height:16px;
+	padding:2px 2px;
+	display:block;
+	outline:none;
+	background:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	border:1px solid #ccc;
+}
+.special_input_for_discount{
+	width:40px;
+	height:100%;
+	padding:2px;
+	display:block;
+	outline:none;
+	background:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	border:1px solid #ccc;
+	margin-top:1px;	
+	margin-bottom:3px;
+	vertical-align: middle;
 }
 .label_textarea_part{
-	width:670px;
+	width:620px;
 	float:left;
 }
 .label_textarea_part textarea{
-	padding:8px;
-	width:652px;
-	height:120px;
+	padding:5px;
+	width:620px;
+	height:100px;
 	display:block;
 	background:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
 	resize:none;
 	outline:none;
 	border:1px solid #ccc;
 }
 .label_input_part{
-	width:220px;
+	width:180px;
 	float:left;
 	display:block;
 }
 .label_input_part input{
-	width:202px;
-	height:20px;
-	padding:5px 8px;
+	width:180px;
+	height:100%;
+	padding:2px;
 	display:block;
 	outline:none;
 	background:none;
 	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
 	color:#000;
 	border:1px solid #ccc;
+	margin-bottom:3px;
+	vertical-align: middle;
 }
 .label_radio_part{
-	width:290px;
-	margin-top:5px;
+	width:180px;
+	margin-bottom:2px;
 	float:left;
+	display:block;
 }
 .label_radio{
-	display:block;
-	float:left;
-	margin-right:15px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
 }
 .label_radio.last{
 	margin-right:0px;
@@ -493,80 +520,92 @@ body {
 	height:24px;
 	display:block;
 	background:#006699;
-	color:#fff;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
+	color:#fff;
 	outline:none;
 	border:none;
 	cursor:pointer;
 	margin-left:145px;
-    nav-index:0;
 }
 .addnew_btn{
-	width:100px;
+	width:80px;
 	height:24px;
 	display:block;
 	background:#A0A0A0;
-	float:left;
-	color:#fff;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
+	float:left;
+	color:#fff;
 	outline:none;
 	border:none;
 	cursor:pointer;
-    margin-left:590px;
+	margin-left:590px;
 	margin-top:-24px;
 }
 .delete_btn{
-	width:100px;
+	width:80px;
 	height:24px;
 	display:block;
-	background:#006699;
-	float:left;
-	color:#FFFFFF;
+	background:#000000;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
+	float:left;
+	color:#fff;
 	outline:none;
 	border:none;
 	cursor:pointer;
-	margin-left:710px;
+	margin-left:695px;
 	margin-top:-24px;
 }
 .resetpw_btn{
-	width:22px;
-	height:22px;
+	width:18px;
+	height:18px;
 	display:block;
 	float:left;
 	background:#009900;
-	color:#fff;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:10px;
+	font-size:9px;
+	color:#fff;
 	outline:none;
 	border:none;
 	cursor:pointer;
 }
 .del_btn{
-	width:22px;
-	height:22px;
+	width:18px;
+	height:18px;
 	display:block;
 	float:left;
 	background:#000000;
-	color:#fff;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size:9px;
+	color:#fff;
 	outline:none;
 	border:none;
 	cursor:pointer;
 }
 .add_btn{
-	width:22px;
-	height:22px;
+	width:18px;
+	height:18px;
 	display:block;
 	float:left;
 	background:#A0A0A0;
-	color:#fff;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-size:9px;
+	color:#fff;
+	outline:none;
+	border:none;
+	cursor:pointer;
+}
+.edit_btn{
+	width:18px;
+	height:18px;
+	display:block;
+	float:left;
+	background:#9FF781;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:#fff;
 	outline:none;
 	border:none;
 	cursor:pointer;
@@ -577,14 +616,15 @@ body {
 }
 .add-timeline-popup {
 	width: 720px;
-	height: 430px; 
+	height: 430px;
 	overflow-x:hidden;
 	overflow-y:scroll;
 	position: relative;
 	background:#FFF;
-	zoom:1;
+	zoom;1;
 	padding:15px;
 	margin: 0 auto;
+	display:title;
 }
 .popup-form-outter{
 	border-bottom:1px solid #ccc;
@@ -599,7 +639,7 @@ body {
 }
 .popup_input{
 	width:680px;
-	padding:6px 10px;
+	padding:3px 5px;
 	border:1px solid #ccc;
 	display:block;
 	outline:none;
@@ -607,75 +647,26 @@ body {
 	border-radius:0px;
 	margin-bottom:10px;
 }
-.popup_input.date{
-	width:656px;
-	padding:6px 10px 6px 30px;
-	border:1px solid #ccc;
-	display:block;
-	outline:none;
-	background:none;
-	border-radius:3px;
-	margin-bottom:10px;
-	background:url(/images/calendar.gif) no-repeat 8px center;
-}
+
 .radio-outter{
 	margin-bottom:10px;
 }
 .checkbox-mrg{
 	margin-top:4px;
 }
-.popup_textarea{
-	width:680px;
-	height:100px;
-	padding:6px 10px;
-	border:1px solid #ccc;
-	display:block;
-	outline:none;
-	background:none;
-	resize:none;
-	border-radius:3px;
-	margin-bottom:10px;
-}
-.popup_submit{
-	width:80px;
-	height:24px;
-	display:block;
-	outline:none;
-	border:none;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	color:#FFF !important;
-	background:#006699;
-}
-.popup-detail{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-	color:#000;
-	display:block;
-	line-height:120%;
-	margin-bottom:8px;
-}
-.popup-title{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	color:#000;
-	display:block;
-	line-height:100%;
-	margin-bottom:10px;
-}
-
 table.gridtable {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
 	color:#333333;
-	width: 670px;
+	width: 630px;
 	border-width: 1px;
 	border-color: #cccccc;
 	border-collapse: collapse;
+	margin-top:0px;
 }
 table.gridtable th {
 	border-width: 1px;
-	padding: 4px;
+	padding: 2px;
 	border-style: solid;
 	border-color: #cccccc;
 	background-color: #dedede;
@@ -683,28 +674,54 @@ table.gridtable th {
 }
 table.gridtable td {
 	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: #cccccc;
+	background-color: #ffffff;
+}
+table.gridtable_quotation {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333333;
+	width: 910px;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-collapse: collapse;
+	margin-top:0px;
+}
+table.gridtable_quotation th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #cccccc;
+	background-color: #dedede;
+	text-align: left;
+}
+table.gridtable_quotation td {
+	border-width: 1px;
 	padding: 4px;
 	border-style: solid;
 	border-color: #cccccc;
 	background-color: #ffffff;
 }
 .baseinput.date{
-	width:160px;
-	height:20px;
-	padding:5px 8px 5px 8px;
+	width:100px;
+	height:16px;
+	padding:2px 2px 2px 2px;
 	border:1px solid #ccc;
 	display:block;
 	outline:none;
 	background:none;
 	font-family:Arial, Helvetica, sans-serif;
-	margin-bottom:0px;
+	font-size:12px;
 	border-radius:0px;
 	color:#000;
-	background:url(../images/calendar.gif) no-repeat 155px center;
+	background:url(/images/calendar.gif) no-repeat 85px center;
 }
 .tabicon {
 padding-left: 2px;
 }
+
 
 /* CSS for Popup Window */
 
@@ -715,6 +732,7 @@ padding-left: 2px;
 }
 .popup_label_part{
 	width:100px;
+	height:22px;
 	float:left;
 	margin-right:10px;
 	font-family:Arial, Helvetica, sans-serif;
@@ -722,30 +740,35 @@ padding-left: 2px;
 	color:#000;
 	display:block;
 	line-height:100%;
-	margin-top:8px;
+	margin-top:5px;
 }
 .popup_label_part span{
 	color:#F00;
 }
 .popup_label_input_part{
 	width:100px;
+	height:16px;
+	margin-top:0px;
 	float:left;
 	display:block;
 }
 .popup_label_input_part input{
 	width:160px;
-	height:20px;
-	padding:5px 8px;
+	height:16px;
+	padding:2px;
 	display:block;
 	outline:none;
 	background:none;
 	font-family:Arial, Helvetica, sans-serif;
 	color:#000;
 	border:1px solid #ccc;
+	margin-bottom:3px;
+
 }
 .popup_label_radio_part{
 	width:100px;
-	margin-top:8px;
+	height:16px;
+	margin-top:0px;
 	float:left;
 }
 .popup_label_radio{
@@ -755,17 +778,20 @@ padding-left: 2px;
 	margin-right:15px;
 }
 .popup_label_combo_part{
-	width:178px;
+	width:166px;
+	height:22px;
 	float:left;
 	display:block;
 }
 .popup_label_combo_part select{
-	padding:5px 8px;
-	width:100%;	
+	padding:2px;
+	width:100%;
+	height:100%;
 	font-family:Arial, Helvetica, sans-serif;
 	display:block;	
-	border-color:#ccc;
+	border:1px solid #ccc;
 	outline:none;
+	margin-bottom:3px;
 }
 .popup_label_textarea_part{
 	width:650px;
@@ -782,7 +808,7 @@ padding-left: 2px;
 	border:1px solid #ccc;
 }
 .popup_label_doc_part{
-	width:535px;
+	width:720px;
 	display:block;
 }
 .popup_submit_part{
@@ -877,7 +903,7 @@ table.popup_doc_gridtable {
 	border-color: #cccccc;
 	border-collapse: collapse;
 	margin-left:110px;
-	margin-top:3px;
+	margin-top:0px;
 }
 table.popup_doc_gridtable th {
 	border-width: 1px;
@@ -895,16 +921,16 @@ table.popup_doc_gridtable td {
 	background-color: #ffffff;
 }
 .popup_input.date{
-	width:160px;
-	height:20px;
-	padding:5px 8px 5px 8px;
+	width:100px;
+	height:16px;
+	padding:2px 2px 2px 2px;
 	border:1px solid #ccc;
 	display:block;
 	outline:none;
 	background:none;
 	font-family:Arial, Helvetica, sans-serif;
-	margin-bottom:0px;
+	margin-bottom:3px;
 	border-radius:0px;
 	color:#000;
-	background:url(../images/calendar.gif) no-repeat 155px center;
+	background:url(/images/calendar.gif) no-repeat 85px center;
 }

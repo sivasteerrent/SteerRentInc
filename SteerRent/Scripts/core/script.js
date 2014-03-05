@@ -11,7 +11,7 @@ $(document).ready(function(e) {
 	});
 	
 	//body background
-	$('body').backstretch("images/body_bg1.jpg");
+	$('body').backstretch("/images/body_bg1.jpg");
 	
 	// bind slider
 	var slidetabs = $('#slidetabs').slidetabs({
@@ -31,7 +31,8 @@ $(document).ready(function(e) {
 	//add tab 
 	$('.page_name').off('click').on('click', function(){
 		var ele= $(this),
-			pageUrl= ele.attr('data-url');
+			pageUrl = ele.attr('data-url');
+		
 		$('.menu_space').slideUp();
 		$.ajax({
 			type:'POST',

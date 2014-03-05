@@ -19,7 +19,7 @@
 .mfp-s-error .mfp-content{display:none;}
 button.mfp-close, button.mfp-arrow{overflow:visible;cursor:pointer;background:transparent;border:0;-webkit-appearance:none;display:block;padding:0;z-index:1046;}
 button::-moz-focus-inner{padding:0;border:0;}
-.mfp-close{width:30px;height:28px;line-height:28px;position:absolute;right:-15px;top:-14px;text-decoration:none;text-align:center;opacity:1;padding:0;color:white;font-style:normal;font-size:28px;font-family:Arial, Baskerville, monospace;background:url(/images/popup-close.png) no-repeat 0 0;}
+.mfp-close{width:30px;height:28px;line-height:28px;position:absolute;right:-15px;top:-14px;text-decoration:none;text-align:center;opacity:1;padding:0;color:white;font-style:normal;font-size:28px;font-family:Arial, Baskerville, monospace;background:url(../images/popup-close.png) no-repeat 0 0;}
 .mfp-close-btn-in .mfp-close{color:#333333;}
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{color:white;right:-6px;text-align:right;padding-right:6px;width:100%;}
 .mfp-counter{position:absolute;top:0;right:0;color:#cccccc;font-size:12px;line-height:18px;}
